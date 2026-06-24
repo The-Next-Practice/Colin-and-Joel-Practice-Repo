@@ -34,4 +34,4 @@ I want to get better at teaching AI-assisted production workflows clearly.
 
 Use this space to write down anything that confused you.
 
-- 
+- # Colin-and-Joel-Practice-Repo
