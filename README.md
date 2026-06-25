@@ -20,7 +20,7 @@ Add your name below with one sentence about what you want to get better at.
 
 ### Roger
 
-I want to get better at teaching AI-assisted production workflows clearly.
+I want to get better at teaching AI-assisted production workflows clearly and make lots of money.
 
 ### Joel
 
