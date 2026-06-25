@@ -28,7 +28,7 @@ I want to get better at teaching AI-assisted production workflows clearly.
 
 ### Colin
 
-
+I'm one helluvan old mofo. bad knees, white hair and all!
 
 ## Notes
 
