@@ -25,6 +25,7 @@ I want to get better at teaching AI-assisted production workflows clearly and ma
 ### Joel
 
 I'm not as old a fart as SOME!
+I'm might be a CoFo, but Joel is a MoFo
 
 ### Colin
 
