@@ -24,8 +24,12 @@ I want to get better at teaching AI-assisted production workflows clearly and ma
 
 ### Joel
 
+<<<<<<< HEAD
 Joel is awesome at everything!!!
 BUT Colin still running circles around him!!
+=======
+I'm not as old a fart as SOME!
+>>>>>>> 6e9d6c7 (Fix Joel's statement in README to clarify his goal)
 
 ### Colin
 
