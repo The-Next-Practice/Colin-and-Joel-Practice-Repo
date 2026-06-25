@@ -25,6 +25,7 @@ I want to get better at teaching AI-assisted production workflows clearly and ma
 ### Joel
 
 Joel is awesome at everything!!!
+BUT Colin still running circles around him!!
 
 ### Colin
 
