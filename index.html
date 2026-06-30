@@ -6,7 +6,6 @@
     <title>Practice Training Page</title>
     <style>
       body {
-<<<<<<< HEAD
         margin: 0;
         font-family: Arial, sans-serif;
         line-height: 1.6;
@@ -17,15 +16,32 @@
       main {
         max-width: 760px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 32px 20px;
       }
 
+      nav {
+        margin-bottom: 24px;
+      }
+
+      nav a,
+      .button-link {
+        display: inline-block;
+        margin-right: 14px;
+        color: #3f563c;
+        font-weight: bold;
+      }
+
+      header,
       section {
         margin-bottom: 24px;
-        padding: 20px;
+        padding: 22px;
         background: #fbfdf9;
         border: 1px solid #c8d5c1;
         border-radius: 8px;
+      }
+
+      header {
+        background: #d8e4d2;
       }
 
       h1,
@@ -54,206 +70,65 @@
         font-weight: bold;
       }
 
-      label {
-        display: block;
-        margin-top: 12px;
-        font-weight: bold;
-      }
-
-      input {
-        box-sizing: border-box;
-        width: 100%;
-        margin-top: 4px;
-        padding: 10px;
-        font: inherit;
-        border: 1px solid #aebda7;
-        border-radius: 6px;
-      }
-
-      button {
-        margin-top: 16px;
-        padding: 10px 16px;
-        font: inherit;
-        font-weight: bold;
-        color: white;
-        background: #587052;
-        border: 0;
-        border-radius: 6px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background: #465f43;
-      }
-
       .next-step {
-        font-weight: bold;
-        color: #3f563c;
-=======
-        max-width: 760px;
-        margin: 0 auto;
-        padding: 32px 20px;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #22332a;
-        background: #f4f7f1;
-      }
-
-      header {
-        padding: 28px;
-        background: #d8e4d2;
-        border-radius: 8px;
-      }
-
-      nav {
-        margin-bottom: 24px;
-      }
-
-      nav a,
-      .button-link {
-        display: inline-block;
-        margin-right: 14px;
-        color: #2f5d3a;
-        font-weight: bold;
-      }
-
-      h1,
-      h2 {
-        line-height: 1.2;
-      }
-
-      section {
-        margin-top: 28px;
-      }
-
-      ul {
-        padding-left: 22px;
-      }
-
-      .next-step {
-        padding: 18px;
-        background: #ffffff;
         border-left: 5px solid #7f9b75;
->>>>>>> 87bbb5e (Enhance practice training page with detailed content and styling; add resources page with helpful links for Git, GitHub, and web basics.)
       }
     </style>
   </head>
   <body>
-<<<<<<< HEAD
     <main>
-      <section>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+
+      <header>
         <h1>Practice Training Page</h1>
         <p>
           Welcome to a simple training page for new team members learning Git,
           GitHub, VS Code, Terminal, and Codex.
         </p>
-      </section>
+      </header>
 
       <section>
         <h2>What You Will Learn</h2>
         <ul>
-          <li>How to open a project folder</li>
-          <li>How to make a small edit</li>
-          <li>How to check what changed</li>
-          <li>How to commit and push work safely</li>
+          <li>Open a project folder.</li>
+          <li>Make a small edit.</li>
+          <li>Check what changed.</li>
+          <li>Commit your work safely.</li>
+          <li>Push changes to GitHub.</li>
         </ul>
       </section>
 
       <section>
         <h2>Session Schedule</h2>
         <ol>
-          <li>Session 1: Git and project basics</li>
-          <li>Session 2: Build a simple training page</li>
-          <li>Session 3: Review, commit, and push changes</li>
+          <li>Session 1: Project setup and basic Git workflow.</li>
+          <li>Session 2: Build and improve this landing page.</li>
+          <li>Session 3: Review, commit, and push changes.</li>
         </ol>
       </section>
 
       <section>
-        <h2>Next Step</h2>
-        <p class="next-step">
-          Open the project, make one small improvement, then review your change
-          before committing it.
+        <h2>Connect</h2>
+        <p>
+          Connect with
+          <a href="https://www.linkedin.com/in/colinfoster/" target="_blank" rel="noopener">Colin Foster</a>
+          or
+          <a href="https://www.linkedin.com/in/joeldelagarza/" target="_blank" rel="noopener">Joel de la Garza</a>
+          on LinkedIn.
         </p>
       </section>
 
-      <section>
-        <h2>Contact Joel</h2>
+      <section class="next-step">
+        <h2>Next Step</h2>
         <p>
-          Connect with Joel on
-          <a href="https://www.linkedin.com/in/joeldelagarza/" target="_blank">
-            LinkedIn
-          </a>
-          or send a short message using the form below.
+          Open the README, add your name, write one sentence about what you want
+          to improve, and save the file.
         </p>
-
-        <form
-          action="mailto:joel.delagarza@thenextpractice.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email Address</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="phone">Phone Number</label>
-          <input id="phone" name="phone" type="tel" />
-
-          <button type="submit">Send Message</button>
-        </form>
+        <a class="button-link" href="resources.html">View training resources</a>
       </section>
     </main>
-=======
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="resources.html">Resources</a>
-    </nav>
-
-    <header>
-      <h1>Practice Training Page</h1>
-      <p>
-        A simple training page for new team members learning Git, GitHub,
-        VS Code, Terminal, and Codex.
-      </p>
-    </header>
-
-    <section>
-      <h2>What You Will Learn</h2>
-      <ul>
-        <li>Open a project folder.</li>
-        <li>Make a small edit.</li>
-        <li>Check what changed.</li>
-        <li>Commit your work.</li>
-        <li>Push changes to GitHub.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Session Schedule</h2>
-      <ul>
-        <li>Session 1: Project setup and basic Git workflow.</li>
-        <li>Session 2: Improve this landing page.</li>
-        <li>Session 3: Review, commit, and push changes.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Connect</h2>
-      <p>
-        Visit
-        <a href="https://www.linkedin.com/in/colinfoster/" target="_blank" rel="noopener">Colin Foster on LinkedIn</a>.
-      </p>
-    </section>
-
-    <section class="next-step">
-      <h2>Next Step</h2>
-      <p>
-        Open the README, add your name, write one sentence about what you want
-        to improve, and save the file.
-      </p>
-      <a class="button-link" href="resources.html">View training resources</a>
-    </section>
->>>>>>> 87bbb5e (Enhance practice training page with detailed content and styling; add resources page with helpful links for Git, GitHub, and web basics.)
   </body>
 </html>

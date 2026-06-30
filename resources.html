@@ -6,19 +6,17 @@
     <title>Training Resources</title>
     <style>
       body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #243027;
+        background: #eef3eb;
+      }
+
+      main {
         max-width: 760px;
         margin: 0 auto;
         padding: 32px 20px;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #22332a;
-        background: #f4f7f1;
-      }
-
-      header {
-        padding: 28px;
-        background: #d8e4d2;
-        border-radius: 8px;
       }
 
       nav {
@@ -28,21 +26,41 @@
       nav a {
         display: inline-block;
         margin-right: 14px;
-        color: #2f5d3a;
+        color: #3f563c;
         font-weight: bold;
+      }
+
+      header,
+      section {
+        margin-bottom: 24px;
+        padding: 22px;
+        background: #fbfdf9;
+        border: 1px solid #c8d5c1;
+        border-radius: 8px;
+      }
+
+      header {
+        background: #d8e4d2;
       }
 
       h1,
       h2 {
+        margin-top: 0;
         line-height: 1.2;
       }
 
-      section {
-        margin-top: 28px;
+      h1 {
+        font-size: 2rem;
+        color: #465f43;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        color: #587052;
       }
 
       ul {
-        padding-left: 22px;
+        padding-left: 24px;
       }
 
       li {
@@ -50,61 +68,64 @@
       }
 
       a {
-        color: #2f5d3a;
+        color: #3f563c;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="resources.html">Resources</a>
-    </nav>
+    <main>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+      </nav>
 
-    <header>
-      <h1>Training Resources</h1>
-      <p>Helpful links for learning the tools used in this practice project.</p>
-    </header>
+      <header>
+        <h1>Training Resources</h1>
+        <p>Helpful links for learning the tools used in this practice project.</p>
+      </header>
 
-    <section>
-      <h2>Git and GitHub</h2>
-      <ul>
-        <li>
-          <a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">Pro Git Book</a>
-          for learning Git basics and common workflows.
-        </li>
-        <li>
-          <a href="https://docs.github.com/en/get-started" target="_blank" rel="noopener">GitHub Get Started Docs</a>
-          for accounts, repositories, commits, and collaboration.
-        </li>
-      </ul>
-    </section>
+      <section>
+        <h2>Git and GitHub</h2>
+        <ul>
+          <li>
+            <a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">Pro Git Book</a>
+            for learning Git basics and common workflows.
+          </li>
+          <li>
+            <a href="https://docs.github.com/en/get-started" target="_blank" rel="noopener">GitHub Get Started Docs</a>
+            for accounts, repositories, commits, and collaboration.
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Editor and Web Basics</h2>
-      <ul>
-        <li>
-          <a href="https://code.visualstudio.com/docs" target="_blank" rel="noopener">VS Code Documentation</a>
-          for learning the editor, terminal, and source control tools.
-        </li>
-        <li>
-          <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax" target="_blank" rel="noopener">MDN Basic HTML Syntax</a>
-          for understanding the structure of a simple web page.
-        </li>
-        <li>
-          <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noopener">Markdown Guide</a>
-          for writing README files and notes.
-        </li>
-      </ul>
-    </section>
+      <section>
+        <h2>Editor and Web Basics</h2>
+        <ul>
+          <li>
+            <a href="https://code.visualstudio.com/docs" target="_blank" rel="noopener">VS Code Documentation</a>
+            for learning the editor, terminal, and source control tools.
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax" target="_blank" rel="noopener">MDN Basic HTML Syntax</a>
+            for understanding the structure of a simple web page.
+          </li>
+          <li>
+            <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noopener">Markdown Guide</a>
+            for writing README files and notes.
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Codex</h2>
-      <ul>
-        <li>
-          <a href="https://developers.openai.com/codex" target="_blank" rel="noopener">OpenAI Codex Docs</a>
-          for learning how Codex can help with code changes, reviews, and project work.
-        </li>
-      </ul>
-    </section>
+      <section>
+        <h2>Codex</h2>
+        <ul>
+          <li>
+            <a href="https://developers.openai.com/codex" target="_blank" rel="noopener">OpenAI Codex Docs</a>
+            for learning how Codex can help with code changes, reviews, and project work.
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
