@@ -2,9 +2,157 @@
 <html>
   <head>
     <title>Practice Training Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #243027;
+        background: #eef3eb;
+      }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      section {
+        margin-bottom: 24px;
+        padding: 20px;
+        background: #fbfdf9;
+        border: 1px solid #c8d5c1;
+        border-radius: 8px;
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #465f43;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        color: #587052;
+      }
+
+      ul,
+      ol {
+        padding-left: 24px;
+      }
+
+      a {
+        color: #3f563c;
+        font-weight: bold;
+      }
+
+      label {
+        display: block;
+        margin-top: 12px;
+        font-weight: bold;
+      }
+
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 4px;
+        padding: 10px;
+        font: inherit;
+        border: 1px solid #aebda7;
+        border-radius: 6px;
+      }
+
+      button {
+        margin-top: 16px;
+        padding: 10px 16px;
+        font: inherit;
+        font-weight: bold;
+        color: white;
+        background: #587052;
+        border: 0;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #465f43;
+      }
+
+      .next-step {
+        font-weight: bold;
+        color: #3f563c;
+      }
+    </style>
   </head>
   <body>
-    <h1>Practice Training Page</h1>
-    <p>This page will be improved during Session 2.</p>
+    <main>
+      <section>
+        <h1>Practice Training Page</h1>
+        <p>
+          Welcome to a simple training page for new team members learning Git,
+          GitHub, VS Code, Terminal, and Codex.
+        </p>
+      </section>
+
+      <section>
+        <h2>What You Will Learn</h2>
+        <ul>
+          <li>How to open a project folder</li>
+          <li>How to make a small edit</li>
+          <li>How to check what changed</li>
+          <li>How to commit and push work safely</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Session Schedule</h2>
+        <ol>
+          <li>Session 1: Git and project basics</li>
+          <li>Session 2: Build a simple training page</li>
+          <li>Session 3: Review, commit, and push changes</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Next Step</h2>
+        <p class="next-step">
+          Open the project, make one small improvement, then review your change
+          before committing it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact Joel</h2>
+        <p>
+          Connect with Joel on
+          <a href="https://www.linkedin.com/in/joeldelagarza/" target="_blank">
+            LinkedIn
+          </a>
+          or send a short message using the form below.
+        </p>
+
+        <form
+          action="mailto:joel.delagarza@thenextpractice.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
