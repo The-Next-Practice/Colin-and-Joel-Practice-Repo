@@ -6,11 +6,11 @@ This repo is for practicing the basics of Git, GitHub, VS Code, Terminal, and sa
 
 By the end of this exercise, you should be able to:
 
-- Open a project folder
-- Make a small edit
-- See what changed
-- Commit the change
-- Push it to GitHub
+1. Open a project folder
+2. Make a small edit
+3. See what changed
+4. Commit the change
+5. Push it to GitHub
 
 ## Practice Task
 
@@ -35,4 +35,4 @@ I'm one helluvan old mofo. bad knees, white hair and all!
 
 Use this space to write down anything that confused you.
 
-- # Colin-and-Joel-Practice-Repo
+1. # Colin-and-Joel-Practice-Repo
