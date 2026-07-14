@@ -71,6 +71,25 @@
         color: #8a315f;
         font-weight: bold;
       }
+
+      .student-practice-button {
+        display: inline-block;
+        margin: 10px 12px 0 0;
+        padding: 12px 18px;
+        border: none;
+        border-radius: 8px;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .joel-bad-contrast {
+        background-color: #f4d35e;
+      }
+
+      .colin-bad-contrast {
+        background-color: #f7a6b8;
+      }
     </style>
   </head>
   <body>
@@ -125,6 +144,23 @@
             for learning how Codex can help with code changes, reviews, and project work.
           </li>
         </ul>
+      </section>
+
+      <section>
+        <h2>Student Accessibility Practice</h2>
+        <p>
+          Each button below has a contrast issue. Inspect your assigned button,
+          find the color problem, test a better color in DevTools, then update
+          the source file.
+        </p>
+
+        <button id="joel-accessibility-button" class="student-practice-button joel-bad-contrast" type="button">
+          Joel contrast practice
+        </button>
+
+        <button id="colin-accessibility-button" class="student-practice-button colin-bad-contrast" type="button">
+          Colin contrast practice
+        </button>
       </section>
     </main>
   </body>
