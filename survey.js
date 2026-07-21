@@ -41,8 +41,24 @@
     });
   });
 
+  function showSurveyAtScrollThreshold() {
+    var scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+    if (scrollableHeight <= 0) {
+      return;
+    }
+
+    var scrollPercent = (window.scrollY / scrollableHeight) * 100;
+
+    if (scrollPercent >= 75) {
+      sessionStorage.setItem(sessionKey, "true");
+      window.removeEventListener("scroll", showSurveyAtScrollThreshold);
+      dialog.showModal();
+    }
+  }
+
   if (!sessionStorage.getItem(sessionKey)) {
-    sessionStorage.setItem(sessionKey, "true");
-    dialog.showModal();
+    window.addEventListener("scroll", showSurveyAtScrollThreshold, { passive: true });
+    showSurveyAtScrollThreshold();
   }
 })();
