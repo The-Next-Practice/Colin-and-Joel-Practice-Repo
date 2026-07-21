@@ -85,6 +85,123 @@
         font-weight: bold;
         cursor: pointer;
       }
+
+      .survey-dialog {
+        width: min(560px, calc(100% - 40px));
+        max-height: calc(100vh - 40px);
+        padding: 0;
+        border: 1px solid #7f9b75;
+        border-radius: 12px;
+        color: #243027;
+        background: #fbfdf9;
+        box-shadow: 0 18px 50px rgba(36, 48, 39, 0.28);
+      }
+
+      .survey-dialog::backdrop {
+        background: rgba(20, 30, 22, 0.7);
+      }
+
+      .survey-dialog form {
+        padding: 28px;
+      }
+
+      .survey-dialog header {
+        position: relative;
+        margin: -28px -28px 24px;
+        padding: 24px 64px 20px 28px;
+        border: 0;
+        border-radius: 12px 12px 0 0;
+      }
+
+      .survey-dialog header p,
+      .survey-question:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .survey-close {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        border-radius: 50%;
+        color: #243027;
+        background: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .survey-close:hover,
+      .survey-close:focus-visible {
+        background: #eef3eb;
+      }
+
+      .survey-question {
+        margin: 0 0 20px;
+        padding: 0;
+        border: 0;
+      }
+
+      .survey-question legend,
+      .survey-question label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      .survey-options label {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+        margin-bottom: 6px;
+        font-weight: normal;
+      }
+
+      .survey-question select,
+      .survey-question textarea {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #7f9b75;
+        border-radius: 6px;
+        color: #243027;
+        background: #ffffff;
+        font: inherit;
+      }
+
+      .survey-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: flex-end;
+        margin-top: 24px;
+      }
+
+      .survey-actions button,
+      .survey-thanks button {
+        padding: 11px 18px;
+        border: 1px solid #465f43;
+        border-radius: 7px;
+        font: inherit;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .survey-submit {
+        color: #ffffff;
+        background: #465f43;
+      }
+
+      .survey-dismiss {
+        color: #465f43;
+        background: #ffffff;
+      }
+
+      .survey-thanks {
+        padding: 32px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -150,6 +267,69 @@
         Test analytics event
       </button>
     </main>
+    <dialog id="training-survey" class="survey-dialog" aria-labelledby="survey-title">
+      <form id="training-survey-form">
+        <header>
+          <h2 id="survey-title">Help us improve this training</h2>
+          <p>Five quick questions—about two minutes.</p>
+          <button class="survey-close" type="button" aria-label="Close survey">&times;</button>
+        </header>
+
+        <div id="survey-questions">
+          <fieldset class="survey-question">
+            <legend>1. How familiar are you with Git and GitHub?</legend>
+            <div class="survey-options">
+              <label><input type="radio" name="experience" value="new" required> Completely new</label>
+              <label><input type="radio" name="experience" value="beginner"> I know the basics</label>
+              <label><input type="radio" name="experience" value="comfortable"> I use them comfortably</label>
+            </div>
+          </fieldset>
+
+          <div class="survey-question">
+            <label for="survey-goal">2. What is your primary goal for this training?</label>
+            <select id="survey-goal" name="goal" required>
+              <option value="">Choose one</option>
+              <option value="git">Learn the Git workflow</option>
+              <option value="web">Build confidence editing web pages</option>
+              <option value="codex">Learn to work with Codex</option>
+              <option value="collaboration">Collaborate more effectively</option>
+            </select>
+          </div>
+
+          <fieldset class="survey-question">
+            <legend>3. Which session are you most interested in?</legend>
+            <div class="survey-options">
+              <label><input type="radio" name="session" value="setup" required> Project setup and basic Git workflow</label>
+              <label><input type="radio" name="session" value="landing-page"> Building and improving the landing page</label>
+              <label><input type="radio" name="session" value="review"> Reviewing, committing, and pushing changes</label>
+            </div>
+          </fieldset>
+
+          <div class="survey-question">
+            <label for="survey-confidence">4. How confident are you about making a code change today?</label>
+            <select id="survey-confidence" name="confidence" required>
+              <option value="">Choose a rating</option>
+              <option value="1">1 — Not confident yet</option>
+              <option value="2">2</option>
+              <option value="3">3 — Somewhat confident</option>
+              <option value="4">4</option>
+              <option value="5">5 — Very confident</option>
+            </select>
+          </div>
+
+          <div class="survey-question">
+            <label for="survey-support">5. What would help you feel successful? <span>(optional)</span></label>
+            <textarea id="survey-support" name="support" rows="3" maxlength="500"></textarea>
+          </div>
+        </div>
+
+        <div class="survey-actions">
+          <button class="survey-dismiss" type="button">Not now</button>
+          <button class="survey-submit" type="submit">Submit survey</button>
+        </div>
+      </form>
+    </dialog>
     <script src="analytics.js" defer></script>
+    <script src="survey.js" defer></script>
   </body>
 </html>
